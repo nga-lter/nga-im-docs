@@ -1,4 +1,4 @@
-# NGA LTER Dataset Best Practices
+# NGA LTER Dataset Best Practices v1.0
 Rules and suggestions for formatting tabular data files from the NGA LTER site.
 
 
