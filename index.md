@@ -134,7 +134,7 @@ Include at least one data quality flag in each file. Whenever more than one para
 
 #### Flag Values
 Code | Value | Definition
----- | ----- | ----------
+-----|-------|------------
 1 | Good | Passed documneted QC tests
 2 | Not evaluated, not available, unknown | Used for data when no QC test was performed, or the information on data quality is not available
 3 | Questionable | Failed non-critical documented metric or subjective test
