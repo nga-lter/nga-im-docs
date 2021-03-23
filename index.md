@@ -39,7 +39,7 @@ For our other cruises on non-UNOLS vessels , we’ll the format the cruise code 
  - YYYY = year of cruise
  - MM = month of departure
  - NN = consecutive cruise number for the calendar year
- - T|S = { Transit leg, Science leg }
+ - T\|S = { Transit leg, Science leg }
 
 Ex. SKQ201807S, TGX201809
 #### Mooring-codes = {GAK1, GEO1, GEO2}
