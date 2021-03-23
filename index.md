@@ -133,12 +133,12 @@ Examples: “quality_flag”, “pressure_and_depth_flag”, “temperature_flag
 Include at least one data quality flag in each file. Whenever more than one parameter (or measurement, observation, analytical result, etc.) is present in a data file, it might become necessary to include more than one quality flag column. This could be necessary in order to specify which column (or columns) contain the values described by the quality flag. When more than one quality flag column is used, specify the applicable columns in the name of the quality flag column.
 
 #### Flag Values
-Code | Value | Definition
------|-------|------------
-1 | Good | Passed documneted QC tests
-2 | Not evaluated, not available, unknown | Used for data when no QC test was performed, or the information on data quality is not available
-3 | Questionable | Failed non-critical documented metric or subjective test
-4 | Bad | Failed critical documented QC test(s) or as assigned by the data provider
-5 | Estimate | Cell values were interpolated, extrapolated, or otherwise estimated
-6 | Below detection limit | Value is below the detection limit of the analytical methods applied
-7 | Missing data | Used as a placeholder when data are missing
+| Code | Value | Definition |
+| -----|-------|----------- |
+| 1 | Good | Passed documneted QC tests |
+| 2 | Not evaluated, not available, unknown | Used for data when no QC test was performed, or the information on data quality is not available |
+| 3 | Questionable | Failed non-critical documented metric or subjective test |
+| 4 | Bad | Failed critical documented QC test(s) or as assigned by the data provider |
+| 5 | Estimate | Cell values were interpolated, extrapolated, or otherwise estimated |
+| 6 | Below detection limit | Value is below the detection limit of the analytical methods applied |
+| 7 | Missing data | Used as a placeholder when data are missing |
