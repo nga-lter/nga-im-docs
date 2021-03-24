@@ -1,7 +1,6 @@
 # NGA LTER Dataset Best Practices
 Rules and suggestions for formatting tabular data files from the NGA LTER site.
 
-
 ## Intro
 ### General notes
 These best practices are designed to help create data files that make it easier to document and archive datasets while making those data files easier programmatically visualize, integrate, or analyze. Conforming to these best practices should be considered part of the data file QC process, and can be implemented at the data processing phase that makes the most sense for the individual dataset and PI.
@@ -120,6 +119,7 @@ Let’s always call these **Latitude_[decimal_degrees_north]** and **Longitude_[
 Record all latitude values in decimal degrees north latitude and all longitude values in decimal degrees east longitude, ideally with six decimal places for electronically logged positions and fewer for hand-logged positions (though please include as are appropriate). 
 
 Example latitudes: 60.210913; 59.138789; 61.804241
+
 Example longitudes: -146.3489247; -151.234978; -147.764816
 
 ### Cast_Number
@@ -144,5 +144,3 @@ Code | Value | Definition
 5 | Estimate | Cell values were interpolated, extrapolated, or otherwise estimated
 6 | Below detection limit | Value is below the detection limit of the analytical methods applied
 -999 | Missing data | Used as a placeholder when data are missing
-
-### Does the table above just need something after it ?
