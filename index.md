@@ -12,6 +12,7 @@ This is a format for making the data easiest to interact with programmatically, 
  1. Each variable forms a column
  2. Each observation forms a row
  3. Each type of observational unit forms a table
+
 In short, one observation per row (this means many more rows than is typical)
 
 [Here’s an informal summary](https://cran.r-project.org/web/packages/tidyr/vignettes/tidy-data.html) of tidy data, and [here’s a link](https://vita.had.co.nz/papers/tidy-data.pdf) to the longer, detailed paper explaining the structure and rationale.
@@ -45,17 +46,17 @@ Ex. SKQ201807S, TGX201809
 #### Mooring-codes = {GAK1, GEO1, GEO2}
 Where ‘GAK1’ is the GAK1 mooring, ‘GEO1’ is the mooring replaced annually, and ’GEO2’ is the separately moored real-time component, etc. A full list of NGA moorings ~~is~~ will be made available on the NGA LTER website, and we'll link to that once it exists.
 
-
-## Data File Formatting
-### Column names
-\[parameter or info type_\]\(specification\]_\[units\]
-
-### Data-type
+#### Data-type
 A unique, descriptive, short, and consistent code that describes what type of data is in the file. 
 
 Use underscores rather than spaces. Do not use commas in column names.
 
 Exs. “PAR”, “Beam_attenuation_\[%\]”, “Fluoresence_\[mg/m3\]”, ”Date”, ”Julian_day”, “Station_number”, etc., etc.
+
+## Data File Formatting
+### Column names
+\[parameter or info type_\]\(specification\)_\[units\]
+
 ### Standard Columns
 We want to agree on the minimum columns that will be included in field data sets and the order in which they will appear. This will make it easier to bring datasets into ODV for analysis, and into scripts for visualizing data or integrating multiple files into larger synthetic data products.
 
@@ -63,20 +64,20 @@ Proposed columns based on ODV requirements.  These would be required as the firs
 
 Index | Variable_name | Variable_description | Value_type | Notes
 ----- | ------------- | -------------------- | ---------- | -----
-1 | Cruise |  | text | ODV Required
-2 | Station |  | text | ODV Required
-3 | Type |  | text | ODV Required
-4 | Date_time |  | text | ODV Required
-5 | Longitude_\[decimal_degrees_east\] |  | float | ODV Required
-6 | Latitude_\[decimal_degrees_north\] |  | float | ODV Required
+1 | Cruise | Sikuliaq standard or [vessel-code][YYYY][MM] | text | ODV Required
+2 | Station | Station Name KOD##, GAK##, MID##, etc. | text | ODV Required
+3 | Type | B for bottle, C for CTD, U for underway, etc | text | ODV Required
+4 | Date_time | Date and time of station in extended ISO8601 format — 2008-04-23T15:15:00.000 | text | ODV Required
+5 | Longitude_\[decimal_degrees_east\] | Longitude of station or measurement | float | ODV Required
+6 | Latitude_\[decimal_degrees_north\] | Latitude of station or measurement | float | ODV Required
 7 | Bot. Depth \[m\] | Bottom depth at station | float | ODV Required
 8 | Cast_Number | Consecutive cast number | integer | 
 9 | Depth_[m] | Depth of measurement, positive down, could be Pressure_\[dbar\] | float | ODV Required
 10 | Bottle_Number | Number (integer) of the bottle from which the sample was taken, if necessary. | text | 
-' ' | ... | Data columns |  |  
-' ' | 1 ... | Quality flag columns | integer |  
-' ' | Cruise_Alias | Alternate name for the cruise, if necessary | text | 
-' ' | alternate_filename | other filename for the data. This field might be used to record the source file for an aggregation | text |  
+... | ... | Data columns |  |  
+... | 1 ... | Quality flag columns | integer |  
+... | Cruise_Alias | Alternate name for the cruise, if necessary | text | 
+... | alternate_filename | other filename for the data. This field might be used to record the source file for an aggregation | text |  
 
 ### Types in Columns
 Keep data types consistent in each column. Use only numeric values in numeric columns, and only characters or strings in text columns. If columns contain categorical data or codes, ensure that the values or code lists are documented.
@@ -133,6 +134,7 @@ Examples: “quality_flag”, “pressure_and_depth_flag”, “temperature_flag
 Include at least one data quality flag in each file. Whenever more than one parameter (or measurement, observation, analytical result, etc.) is present in a data file, it might become necessary to include more than one quality flag column. This could be necessary in order to specify which column (or columns) contain the values described by the quality flag. When more than one quality flag column is used, specify the applicable columns in the name of the quality flag column.
 
 #### Flag Values
+
 Code | Value | Definition
 ---- | ----- | ----------
 1 | Good | Passed documneted QC tests
@@ -141,6 +143,6 @@ Code | Value | Definition
 4 | Bad | Failed critical documented QC test(s) or as assigned by the data provider
 5 | Estimate | Cell values were interpolated, extrapolated, or otherwise estimated
 6 | Below detection limit | Value is below the detection limit of the analytical methods applied
-7 | Missing data | Used as a placeholder when data are missing
+-999 | Missing data | Used as a placeholder when data are missing
 
 ### Does the table above just need something after it ?
