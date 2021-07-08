@@ -142,3 +142,4 @@ Include at least one data quality flag in each file. Whenever more than one para
 | 5 | Estimate | Cell values were interpolated, extrapolated, or otherwise estimated |
 | 6 | Below detection limit | Value is below the detection limit of the analytical methods applied |
 | 7 | Missing data | Used as a placeholder when data are missing |
+
