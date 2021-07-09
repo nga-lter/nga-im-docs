@@ -1,6 +1,7 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+title: NGA LTER Informatiom Management Resources
+layout: page
+exclude: true
 ---
+### 1. [NGA LTER IM Handbook](resources/nga-im-handbook.md)
+### 2. [NGA LTER Dataset Best Practices v1.0](resources/nga-dataset-best-practices.md)
