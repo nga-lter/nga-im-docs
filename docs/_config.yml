@@ -13,24 +13,21 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: NGA LTER IM Documentation
+title: NGA LTER IM Resources
 email: chris@axiomdatascience.com
 description: >- # this means to ignore newlines until "baseurl:"
-  All things IM for the NGA site will be documented here. Sounds great!
-baseurl: "nga-im-docs/" # the subpath of your site, e.g. /blog
-url: "https://github.com/nga-lter/" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: 
+  Documentation of Information Management tools and resources for the NGA LTER site. 
+baseurl: "/nga-im-docs" # the subpath of your site, e.g. /blog
+url: "https://nga-lter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# twitter_username: jekyllrb
 github_username:  nga-lter
 instagram_username: nga.lter
+
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-midnight
+theme: minima
 plugins:
   - jekyll-feed
- # - titles_from_headings:
- #     enabled: true
- #     strip_title: true
- #     collections: true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
