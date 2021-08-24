@@ -1,5 +1,5 @@
 ---
-title: NGA LTER Informatiom Management Resources
+title: NGA LTER Information Management Resources
 layout: page
 exclude: true
 ---
