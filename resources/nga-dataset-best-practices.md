@@ -148,3 +148,4 @@ Code | Value | Definition
 7 | Missing data | Used as a placeholder when data are missing
 
 
+Thanks for reading and following these best practices!
