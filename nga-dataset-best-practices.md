@@ -143,4 +143,4 @@ Code | Value | Definition
 6 | Below detection limit | Value is below the detection limit of the analytical methods applied 
 7 | Missing data | Used as a placeholder when data are missing
 
-
+Thanks for reading and following these best practices.
