@@ -29,7 +29,7 @@ The **[NGA LTER Github organization](https://github.com/nga-lter)** is used to c
 For more a more detailed description of how we use these tools and systems, see **[NGA Information Management Tools](resources/im-tools.md)**. 
 
 # NGA data processes
-General process:
+General process:   
 Ship --> lab/office --> RW --> Archive
 
 ![Flowchart illustrating the general workflow for NGA LTER data management. The diagram shows sequential steps: Ship to lab or office, then to Research Workspace, and finally to Archive. Arrows connect each step, indicating the flow of data. The environment is a clean, structured diagram with labeled boxes and directional arrows. The tone is neutral and informative. Text in the image: Ship, lab or office, RW, Archive.](./Figures/NGA_Interaction_Flowchart.drawio.png)
@@ -38,12 +38,12 @@ Ship --> lab/office --> RW --> Archive
 
 
 
-Deviations:
-
-    large data (many files or very large files): 
-        Ship --> lab/office --> external drives --> Axiom data center --> RW --> Archive
+## Deviations:
+### large data
+(many files or very large files):  
+Ship --> lab/office --> external drives --> Axiom data center --> RW --> Archive
     
-    model results
+### model results
 # People
 Scientists, techs
 

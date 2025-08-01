@@ -1,20 +1,24 @@
 # LTER Core Areas
+## NGA Signature Datasets
+- Seward Line Zooplankton Biomass (Population Studies)
+- Seward Line Physical Hydrography (Disturbance Patterns)
+- GAK1 Temperature and Salinity Time Series (Disturbance Patterns)
+- Seward Line Nutrients (Movement of Inorganic Matter)
+- Integrated Chlorophyll (Primary Production)
+February 22, 2021
 
-This division of our measured parameters into the LTER Core Area categories is based on what CCE and PAL have already done.  
-Ours don't match exactly, but here's how they split theirs up so we have something to start with:
+This division of our measured parameters into the LTER Core Area categories is based on what CCE and PAL have already done. Ours don't match exactly, but here's how they split theirs up so we have something to start with:
 
 ## Disturbance Patterns
 * weather stations
 * sea level and anomalies
 * water temperature
-* sea ice
 
 ## Inorganic Matter
 * dissolved inorganic nutrients
 * dissolved iron
 * DIC (dissolved inorganic carbon)
 * DO (dissolved oxygen)
-* Ammonia Oxidizing Bacteria and Archaea Abundance
 
 ## Organic Matter:
 * Bacteria
@@ -25,13 +29,10 @@ Ours don't match exactly, but here's how they split theirs up so we have somethi
 * photosynthetic parameters from photosynthetic-irradiance curves
 
 ## Population Studies:
-* birds (well, penguins)
-* diet
-* bacteria
+* birds
 * HPLC
 * zooplankton
 * mesozooplankton
-* body lengths
 
 ## Primary Production:
 * Chlorophyll
@@ -41,8 +42,3 @@ Ours don't match exactly, but here's how they split theirs up so we have somethi
 * primary production
 * dissolved oxygen
 * photosynthetic parameters from photosynthetic-irradiance curves
-
-## Signature
-* 8 for PAL including chick counts, chlor, primary production, weather, ice, zooplankton
-* 6 for CCE including zooplankton, primary production, and water temp
-
